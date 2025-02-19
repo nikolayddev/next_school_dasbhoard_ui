@@ -16,9 +16,7 @@ export default function DasbhoardLayout({
                     <Image src="/logo.png" alt="logo" width={32} height={32}></Image>
                     <span className="hidden lg:block font-bold">SchoolDDev</span>
                 </Link>
-                <Menu>
-
-                </Menu>
+                <Menu />
             </div>
             {/* Right */}
             <div className='w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll'>
