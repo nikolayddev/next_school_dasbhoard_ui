@@ -20,8 +20,7 @@ export const teachersData = [
     teacherId: "1234567890",
     name: "Jane Doe",
     email: "jane@doe.com",
-    photo:
-      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    photo: "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
     subjects: ["Physics", "Chemistry"],
     classes: ["5A", "4B", "3C"],
