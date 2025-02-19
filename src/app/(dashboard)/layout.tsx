@@ -11,7 +11,7 @@ export default function DasbhoardLayout({
     return (
         <div className="h-[100%] flex">
             {/* Left */}
-            <div className='w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-red-200 p-4'>
+            <div className='w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-white p-4'>
                 <Link href="/" className="flex items-center justify-center gap-2 lg:justify-start">
                     <Image src="/logo.png" alt="logo" width={32} height={32}></Image>
                     <span className="hidden lg:block font-bold">SchoolDDev</span>
