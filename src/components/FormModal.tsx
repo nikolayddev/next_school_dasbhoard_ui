@@ -56,7 +56,7 @@ export default function FormModal({ table, type, data, id }: {
     | "announcement",
     type: "create" | "update" | "delete",
     data?: any,
-    id?: number
+    id?: string
 }) {
 
     const size = type === "create" ? "w-8 h-8" : "w-7 h-7";
