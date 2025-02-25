@@ -13,6 +13,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Admin {
+  id       String @id
+  username String @unique
+}
+
 model Student {
   id          String       @id
   username    String       @unique
@@ -33,6 +38,7 @@ model Student {
   grade       Grade        @relation(fields: [gradeId], references: [id])
   attendances Attendance[]
   results     Result[]
+  birthday    DateTime
 }
 
 model Teacher {
@@ -50,6 +56,7 @@ model Teacher {
   subjects  Subject[]
   lessons   Lesson[]
   classes   Class[]
+  birthday  DateTime
 }
 
 model Parent {
@@ -76,8 +83,8 @@ model Class {
   name     String @unique
   capacity Int
 
-  supervisorId  String
-  supervisor    Teacher        @relation(fields: [supervisorId], references: [id])
+  supervisorId  String?
+  supervisor    Teacher?       @relation(fields: [supervisorId], references: [id])
   gradeId       Int
   grade         Grade          @relation(fields: [gradeId], references: [id])
   lessons       Lesson[]
