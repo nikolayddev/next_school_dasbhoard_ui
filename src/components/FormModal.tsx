@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-// import TeacherForm from "./forms/TeacherForm";
-// import StudentForm from "./forms/StudentForm";
 import dynamic from "next/dynamic";
 
 const TeacherForm = dynamic(() => import("./forms/TeacherForm"), {
