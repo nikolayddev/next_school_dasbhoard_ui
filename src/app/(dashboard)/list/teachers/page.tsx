@@ -101,6 +101,8 @@ export default async function TeacherListPage({
                     case "search":
                         query.name = { contains: value, mode: "insensitive" }
                         break;
+                    default:
+                        break;
                 }
 
                 console.log(query);
