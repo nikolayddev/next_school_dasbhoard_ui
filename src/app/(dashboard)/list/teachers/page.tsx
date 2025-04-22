@@ -104,8 +104,6 @@ export default async function TeacherListPage({
                     default:
                         break;
                 }
-
-                console.log(query);
             }
         }
     }
